@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Online Store</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* First background image */
+.bgimg-1 {
+  background-image: url('https://th.bing.com/th/id/R.74d264e6505f42bbfc3b3594d03b7885?rik=B%2b5t7qzlxESl7g&pid=ImgRaw&r=0');
+  width: 100%;
+  min-height: 100%;
+  color: none;
+}
+
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 100%;
+  }
+}
+
+h1, h3, p { color: white; }
+
+body {
+    background-color: #000033;
+  }
+  
+  #ttop {
+    color: black;
+  }
+
+#under-cinema {
+    margin-left: 60px;
+    color: black;
+    font-size: 25px;
+    color: white;
+    font-family: monospace;
+    line-height: 30px;
+  }
+  
+  #watch {
+    padding-right: 15px;
+    padding-left: 15px;
+    text-decoration: none;
+    margin-top: 550px;
+    margin-left: 70px;
+    color: #ff00ff;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 30px;
+    font-style: italic;
+    font-family: cursive;
+    background-color: white;
+  }
+
+#cinema {
+    margin-left: 60px;
+    color: white;
+    padding-top: 150px;
+    font-size: 60px;
+    line-height: 70px;
+    font-family: cursive;
+    font-weight: bold;
+  }
+  
+#premier {
+    margin-left: 60px;
+    margin-top: 100px;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+
+#home-text {
+    margin-left: 60px;
+    font-size: 20px;
+    line-height: 30px;
+  }   
+
+#person-typing-laptop {
+    margin-right: 60px;
+    width: 600px;
+    float: right;
+  }
+
+#movie-part {
+    text-align: center;
+    margin-top: 100px;
+    font-family: cursive;
+    font-style: italic;
+  }
+
+#movie-text {
+    margin-top: 70px;
+    text-align: center;
+    font-size: 20px;
+  }
+
+.genre {
+    font-size: 20px;
+    margin-left: 70px; 
+  }
+
+#about-nextmovie {
+    margin-left: 60px;
+    margin-top: 100px;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+
+#about-image {
+    margin-right: 60px;
+    width: 600px;
+    float: right;
+  }
+
+.about-text {
+    margin-left: 60px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+#contact-text {
+    margin-top: 70px;
+  }
+
+</style>
+</head>
+<body>
+ 
+
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a><div id="ttop">
+    <a href="#home" class="w3-bar-item w3-button"><i class="fa fa-home"></i>Home</a>
+    <a href="#movie" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i>Movie</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> About</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i></a>
+    </div>
+  </div>
+ 
+     
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#movie" class="w3-bar-item w3-button" onclick="toggleFunction()">Movie</a>
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">About</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+    
+
+<div class="bgimg-1"  id="home">
+    <h1 id="cinema">Experience<br> Cinema Like <br> Never Before</h1>
+    <p id="under-cinema">Immerse yourself in the most captivating <br>
+    movie experience online. Explore vast <br>
+    genres from our library.</p>
+    <a href="#movie" id="watch">Watch Now</a>
+</div>
+
+ 
+<div id="home">
+  <img id="person-typing-laptop" src="https://postfixadmin.com/wp-content/uploads/2020/10/best-laptop-for-watching-movies-e1602946617771.jpg" alt="a person typing on laptop">
+  <h2 id="premier">Discover the Ultimate Movie Exoerience with NextMovie</h2>
+  <p id="home-text">Get ready to immerse yourself in the world of cinema with NextMovie.
+  As the premier destination for movie lovers in Germany, we offer 
+  a vast collection of films for you to enjoy. From the lasted blockbusters
+  to timeless classics. our website is your ticket to endless
+  entertainment. Experience NextMovie today and elevate your movie-
+  watching experience like never before.</p>
+</div>
+
+  
+  <!-- Container (Product Section) -->
+<div class="w3-content w3-container w3-padding-64" id="movie">
+  <h1 id="movie-part">Offered Movies</h1>
+  <p id="movie-text">Discover a world of movies, series, and more. Find film you need with just a click</p>
+ 
+ 
+  <!-- First Photo Grid-->
+<div class="w3-row-padding w3-padding-16 w3-center" >
+    
+    <div class="w3-quarter">
+      <a href=""><img src="https://th.bing.com/th/id/R.a992d04018650bfe679e90c0f81a18b6?rik=OaVAjN%2fc1ZXeoQ&pid=ImgRaw&r=0" alt="john wick 4 poster" style="width:100%; height: 350px;">
+      <h3>JOHN WICK 4</h3></a>
+      <p>John Wick: Chapter 4 is a 2023 American epic neo-noir action thriller film directed and co-produced by Chad Stahelski and written by Shay Hatten and Michael Finch</p>
+    </div>
+    
+    <div class="w3-quarter">
+      <a href=""><img src="https://th.bing.com/th/id/R.9f598414319613d67603a7c84ee812de?rik=XJKAQBIA4gtI5Q&pid=ImgRaw&r=0" alt="avengement poster" style="width: 100%; height: 350px;">
+      <h3>AVENGEMENT</h3></a>
+      <p>Avengement was released on 24 May 2019 on VOD and in selected theatres, where it received generally positive reviews from critics with praise for its action choreography and Adkins' performance.</p>
+    </div>
+    
+    <div class="w3-quarter">
+      <a href=""><img src="https://th.bing.com/th/id/R.74c2ff95435e5b9b02bd00384f950d94?rik=0fRHW19IdwhSeg&pid=ImgRaw&r=0" alt="boyka 4" style="width:100%; height: 350px;">
+      <h3>UNDISPUTED 4</h3></a>
+      <p>Boyka: Undisputed (also known as Boyka: Undisputed 4), is a 2017 American-Bulgarian martial arts film directed by Todor Chapkanov, and written by David White and Tony Mosher from a story by Boaz Davidson.</p>
+      
+    </div>
+    
+    <div class="w3-quarter">
+      <a href=""><img src="https://th.bing.com/th/id/R.db0cf608778916199a7cd0f575f6280f?rik=J%2bRQKk0B3Zn4nQ&pid=ImgRaw&r=0" alt="mr queen" style="width:100%; height: 350px;">
+      <h3>MR. QUEEN</h3></a>
+      <p>The series follows Jang Bong-hwan, a 21st-century cooking prodigy with an ego as boundless as the ocean and a womanizing reputation to match. He's the affluent head chef for the South Korean president...</p>
+    </div>
+    </div>
+  
+
+
+  <!-- Second Photo Grid-->
+<div class="w3-row-padding w3-padding-16 w3-center">
+    
+    <div class="w3-quarter">
+      <a href=""><img src="https://th.bing.com/th/id/OIP.MApNrXU2aY7kShfDa-CIhgHaLH?rs=1&pid=ImgDetMain" alt="panda 4" style="width:100%; height: 350px;">
+      <h3>KUNG FU PANDA 4</h3></a>
+      <p>Kung Fu Panda 4 is a 2024 American animated martial arts comedy film produced by DreamWorks Animation and distributed by Universal Pictures. It is the fourth installment in the Kung Fu Panda franchise and the sequel to Kung Fu Panda 3 (2016).</p>
+    </div>
+    
+    <div class="w3-quarter">
+      <a href=""><img src="https://th.bing.com/th/id/R.a246921efc7ae4fa4bb38c3e6de9cdf1?rik=2nJoBCJdviY6Ag&riu=http%3a%2f%2fes.web.img3.acsta.net%2fpictures%2f19%2f04%2f29%2f08%2f21%2f1692162.jpg%3fcoixp%3d45%26coiyp%3d73&ehk=Jx40FxHb2Sh4ZIK0bcqD8Loni9vjZTha7jN01TABK%2fQ%3d&risl=&pid=ImgRaw&r=0" alt="chernobyl series" style="width:100%; height: 350px;">
+      <h3>CHERNOBYL Series</h3></a>
+      <p>Chernobyl is a 2019 historical drama television miniseries that revolves around the Chernobyl disaster of 1986 and the cleanup efforts that followed. The series was created and written by Craig Mazin and directed by Johan Renck.</p>
+    </div>
+    
+    <div class="w3-quarter">
+      <a href=""><img src="https://th.bing.com/th/id/OIP.GrIVpB6pKJ-FbLsgcdnhXAHaKj?rs=1&pid=ImgDetMain" alt="the raid 2" style="width:100%; height: 350px;">
+      <h3>The RAID 2</h3></a>
+      <p>THE RAID 2. Drama. , Action. Following immediately after the events of THE RAID, Rama (Iko Uwais) is forced to reinvent himself as an undercover cop in order to provide protection for his wife and child.</p>
+    </div>
+    
+    <div class="w3-quarter">
+      <a href=""><img src="https://th.bing.com/th/id/OIP.xtvw9UzrHvF5vh5IztpCwgHaJ4?rs=1&pid=ImgDetMain" alt="squid game" style="width:100%; height: 350px;">
+      <h3>SQUID GAME</h3></a>
+      <p>Squid Game, which started streaming on Sept. 17, focuses on a desperately indebted group of people in South Korea. They're first tricked into a deadly tournament of children's games, but then many of them volunteer to come back, realizing the games may be their only chance to win the money they need to survive.</p>
+    </div>
+</div>
+</div>
+  
+      <a href=""><h1 class="genre">#popular</h1></a>
+      <a href=""><h1 class="genre">#trend</h1></a>
+      <a href=""><h1 class="genre">#action</h1></a>
+      <a href=""><h1 class="genre">#horror</h1></a>
+      <a href=""><h1 class="genre">#comides</h1></a>
+      <a href=""><h1 class="genre">#romantic</h1></a>
+  
+
+
+
+  <!-- Container (about Section) -->
+<div class="w3-container" id="about">
+     <h1 id="about-nextmovie">About NextMovie</h1>
+     <img id="about-image" src="https://th.bing.com/th/id/OIP.NcHrW9sYSWJcLVWrHEtGewHaE8?rs=1&pid=ImgDetMain" alt="about">
+     <p class="about-text">Welcome to NextMovie, your go-to destination for watching
+     movies online. We are dedicated to providing a seamless and
+     enjoyable movie-watching experience for our users.</p>
+ 
+     <p class="about-text">Based in Germany, we strive to offer a wide range of
+     movies for people to enjoy from the comfort of their own homes.
+     Join us on NextMovie and immerse yourself in the world of
+     cinema.</p>
+</div>
+
+
+
+  <!-- Container (Contact Section) -->
+<div  class="w3-content w3-container w3-padding-64" id="contact">
+     <h3 class="w3-center" id="contact-text">Keep in touch with us</h3>
+     <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+  <div class="w3-col m4 w3-container">
+     <img src="https://steelstairsolutions.com.au/resources/Contact_Us.jpg" class="w3-image w3-round" style="width:100%">
+  </div>
+  <div class="w3-col m8 w3-panel">
+  <div class="w3-large w3-margin-bottom">
+     <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Berlin, Germany (your location)<br>
+     <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +49111111 (your phone number)<br>
+     <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
+  </div>
+     <p>Leave me a note:</p>
+     <form action="/action_page.php" target="_blank">
+  <div class="w3-row-padding" style="margin:0 -16px 8px -16px">  
+  <div class="w3-half">
+     <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+  </div>
+  <div class="w3-half">
+     <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+  </div>
+  </div>
+     <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+     <button class="w3-button w3-black w3-right w3-section" type="submit">
+     <i class="fa fa-paper-plane"></i> SEND MESSAGE
+     </button>
+     </form>
+  </div>
+  </div>
+</div>
+
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-64 w3-hover-opacity-off">
+     <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+<div class="w3-xlarge w3-section">
+     <a href=""><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+     <a href=""><i class="fa fa-instagram w3-hover-opacity"></i></a>
+     <a href=""><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+     <a href=""><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+     <a href=""><i class="fa fa-twitter w3-hover-opacity"></i></a>
+     <a href=""><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+</div>
+     <p>Join Us</p>
+  </footer>
+ 
+<script>
+
+
+  // Change style of navbar on scroll
+   window.onscroll = function() {myFunction()};
+   function myFunction() {
+     var navbar = document.getElementById("myNavbar");
+     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+         navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+      } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+      }
+}
+
+  // Used to toggle the menu on small screens when clicking on the menu button
+   function toggleFunction() {
+     var x = document.getElementById("navDemo");
+     if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+          x.className = x.className.replace(" w3-show", "");
+      }
+}
+</script>
+
+  </body>
+</html>
